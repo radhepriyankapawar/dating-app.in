@@ -2,7 +2,7 @@
   <div class="container">
     <a class="navbar-brand" [routerLink]="['/home']">Panigrahan</a>
 
-    <ul *ngIf="loggedIn()" class="navbar-nav mr-auto">
+    <ul *ngIf="loggedIn()" class="navbar-nav">
       <li class="nav-item" routerLinkActive="active">
         <a class="nav-link" [routerLink]="['/members']">Matches</a>
       </li>
