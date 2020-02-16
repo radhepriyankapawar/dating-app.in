@@ -47,6 +47,7 @@ export class RegisterComponent implements OnInit {
   register() {
     if (this.registerForm.valid) {
       this.user = this.registerForm.value;
+     // this.alertify.error(JSON.stringify(this.registerForm.value) );
       this.authService.register(this.registerForm.value).subscribe(() => {
         this.alertify.success('Registration successful');
       }, error => {
