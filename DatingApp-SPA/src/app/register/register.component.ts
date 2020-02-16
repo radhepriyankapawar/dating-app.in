@@ -47,6 +47,9 @@ export class RegisterComponent implements OnInit {
   register() {
     if (this.registerForm.valid) {
       this.user = this.registerForm.value;
+      if (isNaN(Date.parse(this.registerForm.value.dateOfBirth))){        
+        this.alertify.success('Invalid Date of Birth');
+      }     
      // this.alertify.error(JSON.stringify(this.registerForm.value) );
       this.authService.register(this.registerForm.value).subscribe(() => {
         this.alertify.success('Registration successful');
