@@ -39,6 +39,7 @@ import { UserManagementComponent } from './admin/user-management/user-management
 import { PhotoManagementComponent } from './admin/photo-management/photo-management.component';
 import { AdminService } from './_services/admin.service';
 import { RolesModalComponent } from './admin/roles-modal/roles-modal.component';
+import { DateOnlyDirective } from './_directives/alpha-numeric-only.directive';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -70,7 +71,8 @@ export class CustomHammerConfig extends HammerGestureConfig  {
     HasRoleDirective,
     UserManagementComponent,
     PhotoManagementComponent,
-    RolesModalComponent
+    RolesModalComponent,
+    DateOnlyDirective
   ],
   imports: [
     BrowserModule,
