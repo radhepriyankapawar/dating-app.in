@@ -1,9 +1,9 @@
 import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 
 @Directive({
-  selector: '[DateOnly]'
+  selector: '[alphaNumericOnly]'
 })
-export class DateOnlyDirective {
+export class alphaNumericOnlyDirective {
   private navigationKeys = [
     'Backspace',
     'Delete',
