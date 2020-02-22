@@ -42,6 +42,7 @@ import { RolesModalComponent } from './admin/roles-modal/roles-modal.component';
 
 import { NumericOnlyDirective } from './_directives/numeric-only.directive';
 import { DateOnlyDirective } from './_directives/date-only.directive';
+import { alphaNumericOnlyDirective } from './_directives/alpha-numeric-only.directive';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -75,7 +76,8 @@ export class CustomHammerConfig extends HammerGestureConfig  {
     PhotoManagementComponent,
     RolesModalComponent,
     DateOnlyDirective,
-    NumericOnlyDirective
+    NumericOnlyDirective,
+    alphaNumericOnlyDirective
   ],
   imports: [
     BrowserModule,
